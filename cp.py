@@ -3,6 +3,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 import copy
 
+# Seriously... I could have save myself a lot of time,
+# if I'd used shapely for most of this, I think?!
+
+# The main repeated element in the crease patterns is an
+# approximate parallelogram (not quite parallel or the
+# pattern wouldn't converge like it does!)
 class Parallelogram():
 
     def __init__(self, n=4, rotation=10, spirality=20):
@@ -56,6 +62,8 @@ class Parallelogram():
     def __str__(self):
         return "\n".join([str(__) for __ in [self.x, self.y]])
 
+    # plot the exterior in black
+    # and the diagonal in red
     def plot(self, p):
         p.plot(self.x, self.y, 'k')
         p.plot([self.x[0], self.x[2]], [self.y[0], self.y[2]], 'r')
