@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import copy
 
+# This thing isn't a parallelogram at all
+# what do you call a parallelogram that has
+# converging sides anyway?!
 class Parallelogram():
 
     def __init__(self, n=4, rotation=10, spirality=20):
