@@ -209,14 +209,14 @@ class crease_pattern():
 # cp.plot(plt)
 # plt.show()
 
-for n in range(3, 13, 3):
+for n in range(10, 10):
     beta = 360 / n
     max_r = beta / 2
     alpha = (180 - beta) / 2
     max_s = alpha
-    for rtn in range(4, 26, 4): #[4, 5, 6, 8, 10, 11, 12.5, 15, 17.5, 20, 22.5, 25]:
+    for rtn in range(15, 15): #[4, 5, 6, 8, 10, 11, 12.5, 15, 17.5, 20, 22.5, 25]:
         if rtn <= max_r:
-            for sp in [10, 12.5, 15, 17.5, 20, 22.5, 25, 30, 35, 40, 45]:
+            for sp in [25]:
                 if sp <= max_s:
                     P = Parallelogram(n, rtn, sp)
                     r = row(P)
