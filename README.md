@@ -8,5 +8,3 @@ Requirements:
 - numpy
 
 Here's what one of the crease patterns looks like
-
-<img src='spiral_5|12|30.png'>
