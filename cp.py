@@ -65,7 +65,6 @@ class Parallelogram():
 
     # rotates by the spirality angle, by default
     def rotate(self, rot):
-        rot = rot
         rot_M = np.array([[np.cos(rot), -np.sin(rot), 0.],
                          [np.sin(rot), np.cos(rot), 0.],
                          [0., 0., 1.]])
