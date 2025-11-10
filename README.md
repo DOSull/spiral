@@ -9,4 +9,4 @@ Requirements:
 
 Here's what one of the crease patterns looks like
 
-![](spiral_5|12|30.png)
+![](spiral_5-12-30.png)
